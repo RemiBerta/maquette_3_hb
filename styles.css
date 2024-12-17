@@ -17,7 +17,9 @@ body {
 
         #navBar {
             justify-content: space-between;
-
+            @media screen and (max-width: 720px) {
+                justify-content: center;
+            }
 
             #logo {
                 width: 5rem;
@@ -25,7 +27,9 @@ body {
                 margin: 2em 0 0 15%;
 
                 @media screen and (max-width: 720px) {
-                    margin: 2em 0 0 0;
+                    margin: 2em 1em 0 0;
+                    width: 2.5rem;
+                    height: 2.5rem;
                 }
             }
 
@@ -43,7 +47,7 @@ body {
                         font-size: 1em;
 
                         @media screen and (max-width: 720px) {
-                            margin: 2em 0 0 0;
+                            margin: 2em 0.8em 0 0;
                             font-size: 0.8em;
                         }
 
@@ -63,6 +67,9 @@ body {
             text-align: center;
             font-size: 5em;
             font-weight: 900;
+            @media screen and (max-width: 720px) {
+                font-size:3em;
+            }
         }
 
         p {
@@ -71,6 +78,9 @@ body {
             font-size: 1.6em;
             font-weight: 700;
             padding-bottom: 3.5em;
+            @media screen and (max-width: 720px) {
+                font-size:1.2em;
+            }
         }
     }
 
@@ -85,6 +95,9 @@ body {
                     width: 50%;
                     list-style: none;
                     padding: 1.5em 0;
+                    @media screen and (max-width: 720px) {
+                        padding: 1em 0;
+                    }
 
                     img {
                         width: 3em;
@@ -93,6 +106,15 @@ body {
 
                     h2 {
                         margin: 2em 0;
+                        @media screen and (max-width: 720px) {
+                            margin: 0.8em 0;
+                            font-size: 1em;
+                        }
+                    }
+                    p {
+                        @media screen and (max-width: 720px) {
+                            font-size: 0.8em;
+                        }
                     }
                 }
 
@@ -154,6 +176,9 @@ body {
         #goal {
             text-align: center;
             margin: 4.5em;
+            @media screen and (max-width: 720px) {
+                margin: 4.5em 0; 
+            }
 
             h2 {
                 margin-bottom: 1.5em;
@@ -172,7 +197,10 @@ body {
                     width: 33%;
                     border-top: 1px solid lightgray;
                     border-bottom: 1px solid lightgray;
-
+                    @media screen and (max-width: 720px) {
+                        padding: 1.5em 0;
+                        font-size: 0.9em;
+                    }
                     img {
                         width: 3em;
                         height: 3em;
@@ -198,7 +226,7 @@ body {
                 width: 40%;
                 padding-right: 10%;
                 @media screen and (max-width: 720px) {
-                    width: 60%;
+                    width: 65%;
                     padding-right: 5%;
                 }
 
@@ -217,7 +245,7 @@ body {
                         text-align: justify;
                         margin: 2em 0;
                         @media screen and (max-width: 720px) {
-                            font-size: 0.7em;
+                            font-size: 0.8em;
                         }
                     }
 
@@ -253,11 +281,19 @@ footer {
             width: 5rem;
             height: 5rem;
             margin-top: 2em;
+            @media screen and (max-width: 720px) {
+                width: 2.5rem;
+                height: 2.5rem;
+                margin-top: 2em;
+            }
         }
 
         p {
             margin-top: 2em;
             text-align: justify;
+            @media screen and (max-width: 720px) {
+                font-size: 0.8em;
+            }
         }
     }
 
@@ -267,6 +303,11 @@ footer {
 
         h4 {
             margin: 2em 0;
+        }
+        p {
+            @media screen and (max-width: 720px) {
+                font-size: 0.7em;
+            }
         }
     }
 }
